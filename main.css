@@ -1,0 +1,520 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Roboto;
+    font-weight: 400;
+}
+
+body #wrapper {
+}
+
+/*************************PopUP section***************************/
+
+body #wrapper #popUpSection {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    line-height: 30px;
+    padding: 16px 0;
+}
+
+body #wrapper #popUpSection span {
+    padding: 0 20px;
+}
+
+
+body #wrapper #popUpSection #closeBtn {
+    border: none;
+    background-color: black;
+    position: absolute;
+    right: 20px;
+    top: 0;
+}
+
+body #wrapper #popUpSection #closeBtn:hover {
+    cursor:pointer;
+    color: yellow;
+}
+
+body #wrapper #popUpSection #closeBtn img {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    right: 15px;
+    top: 25px;
+
+}
+
+/*************************Header section***************************/
+
+body #wrapper header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 50px 10px 50px;
+    align-items: center;
+    font-size: 20px;
+    /*background-image: linear-gradient(sandybrown, white);*/
+    /*background-image: linear-gradient(rgba(255,230,140,0.5), rgba(255,230,140,0.2));*/
+    background-color: gold;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    border-radius: 10px;
+}
+
+body #wrapper header #logoSection {
+    display: flex;
+}
+
+body #wrapper header #logoSection:hover {
+    cursor: pointer
+}
+
+body #wrapper header .logo {
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+body #wrapper header h3 {
+    position:relative;
+    left: 30px;
+    top: 15px;
+}
+
+body #wrapper header ul {
+    display: flex;
+    list-style: none;
+}
+
+body #wrapper header ul li {
+    text-align: center;
+    padding: 0;
+    width: 100px;
+}
+
+body #wrapper header #hamburger_icon {
+    display: none;
+}
+
+body #wrapper header ul li:nth-child(1) {
+    position: relative;
+    right: 125px;
+}
+
+body #wrapper header ul li:nth-child(2) {
+    position: relative;
+    right: 100px;
+}
+
+body #wrapper header ul li:nth-child(3) {
+    position: relative;
+    right: 75px;
+}
+
+body #wrapper header ul li:nth-child(4) {
+    position: relative;
+    right: 50px;
+}
+
+body #wrapper header ul li:nth-child(5) {
+    position: relative;
+    right: 25px;
+}
+
+
+body #wrapper header ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+body #wrapper header ul li a:hover {
+    transition: 0.5s;
+    padding: 10px;
+    border: 2px solid orange;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    width: 120px;
+}
+
+/*body #wrapper header ul li span {*/
+/*    font-size: 14px;*/
+/*    border: 1px solid black;*/
+/*    background-color: black;*/
+/*    color: white;*/
+/*    border-radius: 5px;*/
+/*}*/
+
+/*************************Slider section***************************/
+
+body #wrapper main {
+    z-index: -1;
+    border-radius: 10px;
+}
+
+body #wrapper main #sliderSection {
+    width: 100%;
+}
+
+body #wrapper main #sliderSection .mySlides{
+    display: none;
+    width:100%;
+    margin: auto;
+    opacity: 0.3;
+    height: 600px;
+}
+
+body #wrapper main #sliderSection .sliderButtons {
+    display: flex;
+    justify-content: space-between;
+}
+
+body #wrapper main #sliderSection .sliderBtnLeft {
+    width: 50px;
+    height: 600px;
+    border: none;
+    opacity: 1;
+    position: absolute;
+    top: 134px;
+}
+
+body #wrapper main #sliderSection .sliderBtnLeft:hover {
+    cursor: pointer;
+    border: 2px solid gray;
+    border-left: none;
+}
+
+body #wrapper main #sliderSection .sliderBtnRight {
+    width: 50px;
+    height: 600px;
+    border: none;
+    opacity: 1;
+    position: absolute;
+    top: 134px;
+    right: 0;
+}
+
+body #wrapper main #sliderSection .sliderBtnRight:hover {
+    cursor: pointer;
+    border: 2px solid gray;
+    border-right: none;
+}
+
+/*************************aboutUS section***************************/
+
+body #wrapper main #aboutUS {
+    position: absolute;
+    top: 250px;
+    left: 50px;
+    max-width: 800px;
+}
+
+body #wrapper main #aboutUS h2 {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 480px;
+    font-size: 84px;
+    margin: 10px 0 10px 75px;
+}
+
+body #wrapper main #aboutUS h4 {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 600px;
+    font-size: 30px;
+    margin: 50px 0 10px 75px;
+}
+
+body #wrapper main #aboutUS a {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 320px;
+    font-size: 30px;
+    margin: 20px 0 10px 75px;
+    text-decoration: none;
+    color: darkblue;
+}
+
+body #wrapper main #aboutUS a:hover {
+    border-radius: 10px;
+    transition: 0.7s;
+    text-decoration: underline;
+}
+
+
+/*************************Offices section***************************/
+
+body #wrapper main #officesSection {
+    display: flex;
+    flex-direction: column;
+    margin-top: -1px;
+    flex-wrap: wrap;
+    background-image: radial-gradient(lightblue,aliceblue);
+}
+
+body #wrapper main #officesSection h2 {
+    text-align: center;
+    font-size: 48px;
+    font-family: 'Dancing Script', cursive;
+    padding-top: 30px;
+}
+
+body #wrapper main #officesSection #officesSliderSection {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    max-width: 600px;
+    margin: auto;
+
+}
+
+body #wrapper main #officesSection #officesSliderSection .officesSliderSectionElement {
+    background-image: radial-gradient(lightblue,aliceblue);
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    padding: 15px;
+    border-radius: 85px;
+    box-shadow: 0 0 0 5px black;
+    transition: box-shadow 0.8s linear;
+    cursor: pointer;
+    aspect-ratio: 16/9;
+    flex: 1 0 90%;
+    scroll-snap-align: center;
+    max-height: 600px;
+}
+
+body #wrapper main #officesSection #officesSliderSection .officesSliderSectionElement:hover {
+    box-shadow: 0 0 0 10px darkblue;
+}
+
+body #wrapper main #officesSection #officesSliderSection h4 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: auto;
+}
+
+body #wrapper main #officesSection #officesSliderSection img {
+    max-width: 400px;
+    min-width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    margin: 20px;
+}
+
+body #wrapper main #officesSection #officesSliderSection p {
+    max-width: 400px;
+    text-align: left;
+    margin: auto;
+}
+
+body #wrapper main #officesSection #officesSliderSection .officesSliderSectionElement a {
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+body #wrapper main #officesSection #officesSliderSection .officesSliderSectionElement iframe {
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    max-width: 300px;
+    margin: 20px;
+}
+
+body #wrapper main #officesSection .officeSliderSectionNav {
+    column-gap: 25px;
+    transform: translate(-50%);
+    z-index: 1;
+    display: flex;
+    margin: 20px auto 20px 50%;
+}
+
+body #wrapper main #officesSection .officeSliderSectionNav a {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: black;
+    opacity: 0.75;
+    transition: opacity ease 0.25s;
+}
+
+body #wrapper main #officesSection .officeSliderSectionNav a:hover {
+    background-color: blue;
+    transition: 0.5s;
+}
+
+
+/*************************NewsLetter section***************************/
+
+body #wrapper main #newsLetterSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: radial-gradient(lightyellow,aliceblue);
+}
+
+body #wrapper main #newsLetterSection #newsLetterSectionElements {
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid rgba(200, 128, 212, 0.5)
+}
+
+body #wrapper main #newsLetterSection h4 {
+    text-align: center;
+    font-size: 32px;
+    margin: 20px 0;
+}
+
+body #wrapper main #newsLetterSection form {
+    padding: 10px;
+}
+
+body #wrapper main #newsLetterSection form label {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+body #wrapper main #newsLetterSection form input {
+    width: 200px;
+    padding: 5px;
+}
+
+body #wrapper main #newsLetterSection form #submit {
+    margin: 10px auto auto auto;
+}
+
+body #wrapper main #newsLetterSection form #countries  {
+    padding: 5px;
+}
+
+/*************************Footer section***************************/
+
+body #wrapper footer {
+    padding: 20px 0;
+    text-align: center;
+    font-size: 18px;
+    background-image: radial-gradient(lightblue,aliceblue);
+}
+
+/*************************MEDIA QUERIES***************************/
+
+@media screen and (max-width: 1000px){
+    body #wrapper header ul li{
+        display: none;
+        list-style: none;
+    }
+
+    body #wrapper header #hamburger_icon {
+        display: inline-block;
+        color: black;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    body #wrapper #popUpSection {
+        display: flex;
+        flex-direction: column;
+    }
+
+    body #wrapper #popUpSection #closeBtn img {
+        position: relative;
+        top: 40px;
+        right: 20px;
+    }
+
+    body #wrapper main #sliderSection .mySlides {
+        height: 400px;
+    }
+
+    body #wrapper main #sliderSection .sliderButtons .sliderBtnLeft{
+        height: 430px;
+        width: 30px;
+    }
+
+    body #wrapper main #sliderSection .sliderButtons .sliderBtnRight{
+        height: 430px;
+        width: 30px;
+    }
+
+    body #wrapper main #aboutUS {
+        max-width: 400px;
+    }
+
+    body #wrapper main #aboutUS h2 {
+        margin-left: 20px;
+        font-size: 36px;
+    }
+
+    body #wrapper main #aboutUS h4 {
+        font-size: 20px;
+        margin-left: 20px;
+    }
+
+    body #wrapper main #aboutUS a{
+        font-size: 20px;
+        margin-left: 20px;
+    }
+
+    body #wrapper main #officesSection h2 {
+        font-size: 36px;
+    }
+
+    body #wrapper main #officesSection #officesSliderSection {
+        max-width: 400px;
+    }
+}
+@media screen and (max-width: 400px) {
+    body #wrapper main #officesSection #officesSliderSection {
+
+        max-width: 300px;
+    }
+
+    body #wrapper main #officesSection #officesSliderSection .officesSliderSectionElement {
+        border: 2px solid black;
+        border-radius: 0;
+        margin: 0;
+
+    }
+
+    body #wrapper main #officesSection h2 {
+        font-size: 24px;
+    }
+
+    body #wrapper main #officesSection #officesSliderSection .officesSliderSectionElement h4 {
+        font-size: 18px;
+    }
+    body #wrapper main #officesSection #officesSliderSection .officesSliderSectionElement img{
+        width: 200px;
+        height: 100px;
+    }
+    body #wrapper main #officesSection #officesSliderSection .officesSliderSectionElement p {
+        max-width: 200px;
+    }
+    body #wrapper main #officesSection #officesSliderSection .officesSliderSectionElement iframe {
+        max-width: 200px;
+        height: 100px;
+    }
+
+
+
+    body #wrapper main #newsLetterSection form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+
